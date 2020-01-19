@@ -1,6 +1,6 @@
 function selectNumber(num){
     for (var i = 0; i < num; i++) {
-        document.getElementById("centerText").innerHTML += ("This is via a loop. " + (num - i) + " more times." + "<br>");
+        document.getElementById("centerText").innerHTML += ("This is via a loop. " + (num - (i + 1)) + " more times." + "<br>");
       }
         document.getElementById("centerText").innerHTML += ("Complete. <br>");
 
