@@ -8,13 +8,27 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <!--JS Select a number - iterate through a loop x number of times - Display that number appended to the HTML code - conditional statement to display color - function contains the loop
   Make and array of the number select - print out array of selected numbers when done -->
+  <div class="banner">
+    Fluency Number 1 - JavaScript Basics
+  </div>
+  <div class="bodyContainer">
+    <div class="leftCol"><h3>Select a number.</h3><br>
+      The number selected will populate a message in the center column x number of times, x being the number selected.
+      <button type="button" onclick="selectNumber(1)"> 1 </button>
+      <button type="button" onclick="selectNumber(2)"> 2 </button>
+      <button type="button" onclick="selectNumber(3)"> 3 </button>
+      <button type="button" onclick="selectNumber(4)"> 4 </button>
+      <button type="button" onclick="selectNumber(5)"> 5 </button>
+    </div>
+    <div class="centerCol"></div>
+    <div class="rightCol"></div>
+  </div>
   <script src="/script.js"></script>
 </body>
 
