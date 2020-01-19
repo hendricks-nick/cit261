@@ -7,6 +7,9 @@
     padding-left: 100px;
     padding-right: 100px;
 }
+.colContainer{
+    justify-content: center;
+}
 #centerText{
     color: black;
     text-align: center;
