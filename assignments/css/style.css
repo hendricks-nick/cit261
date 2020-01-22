@@ -2,13 +2,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     padding-left: 100px;
     padding-right: 100px;
 }
 .colContainer{
-    justify-content: center;
+    justify-items: center;
 }
 #centerText{
     color: black;
