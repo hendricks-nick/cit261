@@ -10,6 +10,13 @@
 .colContainer{
     justify-items: center;
 }
+
+.colTitle{
+    font-size: medium;
+    text-align: center;
+    
+}
+
 #centerText{
     color: black;
     text-align: center;

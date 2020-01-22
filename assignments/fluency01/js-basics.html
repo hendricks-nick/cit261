@@ -18,8 +18,10 @@
     Fluency Number 1 - JavaScript Basics
   </div>
   <div class="bodyContainer">
+    <div class="colTitle">Left</div>
     <div class="colContainer"><h3>Select a number.</h3><br>
       The number selected will populate a message in the center column x number of times, x being the number selected. <br>
+      Even Numbers will change the text to blue, while odd numbers will change it to red. <br>
       <button type="button" onclick="selectNumber(1)"> 1 </button> <br>
       <button type="button" onclick="selectNumber(2)"> 2 </button> <br>
       <button type="button" onclick="selectNumber(3)"> 3 </button> <br>
@@ -27,10 +29,12 @@
       <button type="button" onclick="selectNumber(5)"> 5 </button> <br>
     </div>
     <div class="colContainer">
-      Center<p id="centerText"><br></p>
+      <div class="colTitle">Center</div><br>
+      <div id="centerText"><br></div>
     </div>
     <div class="colContainer">
-      Right
+      <div class="colTitle">Right</div><br>
+      <div id="rightText"><br></div>
     </div>
   </div>
   <script src="script.js"></script>
