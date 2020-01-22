@@ -5,6 +5,8 @@ var numArray = [];
 function selectNumber(num){
     // push num onto array.
     numArray.push(num);
+    console.log(num + "pushed into array.");
+    console.log("Current array: " + numArray);
 
     // Loops
     for (var i = 0; i < num; i++) {
@@ -24,7 +26,7 @@ function selectNumber(num){
 
 // Displays array in third column.
 function displayArray(){
-    for (var i = 0; i < numArray.length(); i++){
+    for (var i = 0; i < numArray.length; i++){
         document.getElementById("rightText").innerHTML += numArray[i] + "<br>";
     }
 }
