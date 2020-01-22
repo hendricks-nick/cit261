@@ -1,5 +1,5 @@
 // Global array
-var numArray;
+var numArray = [];
 
 // Function
 function selectNumber(num){
