@@ -19,7 +19,7 @@ function createBook(fName, lName, bName, num){
         },
 
         getAuthName : function() {
-            return this.fName + " " + this.lName;
+            return this.authorFirst + " " + this.authorLast;
         },
 
         getIsbn     : function() {
