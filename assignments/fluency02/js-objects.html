@@ -10,8 +10,23 @@
 
   <link href="../css/style.css" rel="stylesheet">
 </head>
-
 <body>
+<!-- JavaScript Objects - Object Creation Functions, Inheritance, Properties, Methods, Instantiation -->
+<div class="colTitle">Add A Book To Your Library</div>
+<form>
+  Author First Name:<br>
+  <input type="text" name="fName" placeholder="Mickey">
+  <br>
+  Author Last Name:<br>
+  <input type="text" name="lName" placeholder="Mouse">
+  Book Name:<br>
+  <input type="text" name="bName" placeholder="Disneyland...yay">
+  ISBN:<br>
+  <input type="text" name="isbn" placeholder="123-456">
+  <br><br>
+  <input type="submit" value="Submit" onsubmit="createBook(fName.value, lName.value, bName.value, isbn.value)">
+</form> 
+
   <script src="script.js"></script>
 </body>
 
