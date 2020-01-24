@@ -35,9 +35,9 @@ function displayBooks() {
 
   for (var i = 0; i < bookArr.length; i++){
 
-    var author = bookArr[i].getAuthName;
-    var book = bookArr[i].getBkName;
-    var isbn = bookArr[i].getIsbn;
+    var author = bookArr[i].getAuthName();
+    var book = bookArr[i].getBkName();
+    var isbn = bookArr[i].getIsbn();
 
     document.getElementById("authorCol").innerHTML += author + '<br>';
     document.getElementById("bookCol").innerHTML += book + '<br>';
