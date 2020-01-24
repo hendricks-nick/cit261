@@ -34,9 +34,14 @@ function displayBooks() {
   clearBooks();
 
   for (var i = 0; i < bookArr.length; i++){
-  document.getElementById("authorCol").innerHTML += bookArr[i].getAuthName + 'br>';
-  document.getElementById("bookCol").innerHTML += bookArr[i].getBkName + '<br>';
-  document.getElementById("isbnCol").innerHTML += bookArr[i].getIsbn + '<br>';
+
+    var author = bookArr[i].getAuthName;
+    var book = bookArr[i].getBkName;
+    var isbn = bookArr[i].getIsbn;
+
+    document.getElementById("authorCol").innerHTML += author + '<br>';
+    document.getElementById("bookCol").innerHTML += book + '<br>';
+    document.getElementById("isbnCol").innerHTML += isbn + '<br>';
 }
 
 }
