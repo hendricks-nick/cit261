@@ -19,7 +19,7 @@ function createBook(fName, lName, bName, num){
         },
 
         getAuthName : function() {
-            return this.bookName;
+            return this.fName + " " + this.lName;
         },
 
         getIsbn     : function() {
@@ -29,3 +29,20 @@ function createBook(fName, lName, bName, num){
 
       console.log("Array Length: " + bookArr.length);
     }
+
+function displayBooks() {
+  clearBooks();
+
+  for (var i = 0; i < bookArr.length; i++){
+  document.getElementById("authorCol").innerHTML += bookArr[i].getAuthName + 'br>';
+  document.getElementById("bookCol").innerHTML += bookArr[i].getBkName + '<br>';
+  document.getElementById("isbnCol").innerHTML += bookArr[i].getIsbn + '<br>';
+}
+
+}
+
+function clearBooks(){
+  document.getElementById("authorCol").innerHTML = '<div class="colTitle">Book Author<br></div><br>';
+  document.getElementById("bookCol").innerHTML = '<div class="colTitle">Book Name<br></div><br>';
+  document.getElementById("isbnCol").innerHTML = '<div class="colTitle">Book ISBN<br></div><br>';
+}

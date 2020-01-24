@@ -13,23 +13,42 @@
 <body>
 <!-- JavaScript Objects - Object Creation Functions, Inheritance, Properties, Methods, Instantiation -->
 <div class="colTitle">Add A Book To Your Library</div>
-<form>
-  Author First Name:<br>
-  <input type="text" name="fName" placeholder="Mickey">
-  <br>
-  Author Last Name:<br>
-  <input type="text" name="lName" placeholder="Mouse">
-  <br>
-  Book Name:<br>
-  <input type="text" name="bName" placeholder="Disneyland...yay">
-  <br>
-  ISBN:<br>
-  <input type="text" name="isbn" placeholder="123-456">
-  <br>
-  <br><br>
-  <input type="button" value="Submit" onclick="createBook(fName.value, lName.value, bName.value, isbn.value)">
-</form> 
-
+<div class="bodyContainer">
+  <div class="colContainer"></div>
+  <div class="colContainer"> 
+  <form>
+      Author First Name:<br>
+      <input type="text" name="fName" placeholder="Mickey">
+      <br>
+      Author Last Name:<br>
+      <input type="text" name="lName" placeholder="Mouse">
+      <br>
+      Book Name:<br>
+      <input type="text" name="bName" placeholder="Disneyland...yay">
+      <br>
+      ISBN:<br>
+      <input type="text" name="isbn" placeholder="123-456">
+      <br>
+      <br><br>
+      <input type="button" value="Submit" onclick="createBook(fName.value, lName.value, bName.value, isbn.value)">
+    </form> 
+  </div> 
+  <div class="colContainer">
+    Show Books Here: <br>
+    <button type="button" onclick="displayBooks()"> Show Books </button> <br>
+    <div class="bodyContainer">
+      <div id="authorCol">
+        <div class="colTitle">Book Author<br></div><br>
+      </div>
+      <div id="bookCol">
+        <div class="colTitle">Book Name<br></div><br>
+      </div>
+      <div id="isbnCol">
+        <div class="colTitle">Book ISBN<br></div><br>
+      </div>
+    </div>
+  </div> 
+</div>
   <script src="script.js"></script>
 </body>
 
