@@ -11,37 +11,37 @@
   <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
-<!-- JavaScript Objects - Object Creation Functions, Inheritance, Properties, Methods, Instantiation -->
-<div class="colTitle">Add A Student Profile - Class Limit of 10</div>
-<div class="bodyContainer">
-  <div class="colContainer"></div>
-  <div class="colContainer"> 
-  <form>
-      First Name:<br>
-      <input type="text" name="fName" placeholder="Mickey">
-      <br>
-      Last Name:<br>
-      <input type="text" name="lName" placeholder="Mouse">
-      <br>
-      Grade:<br>
-      <input type="text" name="grade" placeholder="Junior">
-      <br>
-      Age:<br>
-      <input type="text" name="age" placeholder="16">
-      <br>
-      Gender:<br>
-      <input type="text" name="gender" placeholder="Male">
-      <br>
-      <br><br>
-      <input type="button" value="Submit" onclick="createProfile(fName.value, lName.value, grade.value, age.value, gender.value)">
-    </form> 
-  </div> 
-  <div class="colContainer">
-    Request a Profile <br>
-    <button type="button" onclick="requestProfile()"> Request Profile </button> <br>
+  <!-- JavaScript Objects - Object Creation Functions, Inheritance, Properties, Methods, Instantiation -->
+  <div class="colTitle">Add A Student Profile - Class Limit of 10</div>
+  <div class="bodyContainer">
+    <div class="colContainer"></div>
+    <div class="colContainer"> 
+    <form>
+        First Name:<br>
+        <input type="text" name="fName" placeholder="Mickey">
+        <br>
+        Last Name:<br>
+        <input type="text" name="lName" placeholder="Mouse">
+        <br>
+        Grade:<br>
+        <input type="text" name="grade" placeholder="Junior">
+        <br>
+        Age:<br>
+        <input type="text" name="age" placeholder="16">
+        <br>
+        Gender:<br>
+        <input type="text" name="gender" placeholder="Male">
+        <br>
+        <br><br>
+        <input type="button" value="Submit" onclick="createProfile(fName.value, lName.value, grade.value, age.value, gender.value)">
+      </form> 
+    </div> 
+    <div class="colContainer">
+      Request Class Profile <br>
+      <button type="button" onclick="requestProfile()"> Request Profiles </button> <br>
+      <p id="classProfiles"></p>
     </div>
   </div> 
-</div>
   <script src="script.js"></script>
 </body>
 
