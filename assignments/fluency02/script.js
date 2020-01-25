@@ -13,8 +13,8 @@ class Person {
 
 // inherits person
 class Student extends Person{
-    constructor(grade) {
-
+    constructor(first, last, grade, age, gender) {
+        super(first, last, age, gender);
         this.grade = grade;
     }
 
