@@ -30,7 +30,7 @@ class Student {
 }
 
 // array of students
-var listofStudents = new Student[10];
+var listofStudents = new Student(10);
 
 function createProfile(first, last, grade, age, gender){
     listofStudents[0] = new Student(first, last, grade, age, gender);
