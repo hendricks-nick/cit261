@@ -1,53 +1,45 @@
 // JavaScript Objects - Object Creation Functions, Inheritance, Properties, Methods, Instantiation 
 
-var bookArr = [];
+class Person {
+    constructor(first, last, age, gender) {
+        this.name = {
+            first,
+            last
+        };
+        this.age = age;
+        this.gender = gender;
+    }
+}
 
-function createBook(fName, lName, bName, num){
-    console.log("Data received:");
-    console.log("Author First Name: " + fName);
-    console.log("Author Last Name: " + lName);
-    console.log("Book Name: " + bName);
-    console.log("ISBN: " + num);
-    
-    bookArr[bookArr.length] = {
-        authorFirst : fName,
-        authorLast  : lName,
-        bookName    : bName,
-        isbn        : num,
-        getBkName   : function() {
-          return this.bookName;
-        },
+// inherits person
+class Student {
+    constructor(first, last, grade, age, gender) {
 
-        getAuthName : function() {
-            return this.authorFirst + " " + this.authorLast;
-        },
+        Person.call(this, first, last, age, gender);
 
-        getIsbn     : function() {
-            return this.isbn;
-        }
-      };
-
-      console.log("Array Length: " + bookArr.length);
+        this.grade = grade;
     }
 
-function displayBooks() {
-  clearBooks();
-
-  for (var i = 0; i < bookArr.length; i++){
-
-    var author = bookArr[i].getAuthName();
-    var book = bookArr[i].getBkName();
-    var isbn = bookArr[i].getIsbn();
-
-    document.getElementById("authorCol").innerHTML += author + '<br>';
-    document.getElementById("bookCol").innerHTML += book + '<br>';
-    document.getElementById("isbnCol").innerHTML += isbn + '<br>';
+    get getProfile(){
+        return ("Student <br>" + 
+                "Name: " + this.name.first + " " + this.name.last + "<br>" +
+                "Grade: " + this.grade + "<br>" +
+                "Age: " + this.age + "<br>" +
+                "Gender: " + this.gender + "<br>");
+    }
 }
 
+// array of students
+var listofStudents = new Student[10];
+
+function createProfile(first, last, grade, age, gender){
+    listofStudents[0] = new Student(first, last, grade, age, gender);
+    console.log("Array: " + listofStudents);
+    console.log("Array Length: " + listofStudents.length);
 }
 
-function clearBooks(){
-  document.getElementById("authorCol").innerHTML = '<div class="colTitle">Book Author<br></div><br>';
-  document.getElementById("bookCol").innerHTML = '<div class="colTitle">Book Name<br></div><br>';
-  document.getElementById("isbnCol").innerHTML = '<div class="colTitle">Book ISBN<br></div><br>';
+function requestProfile(){
+    if(personType === 'Teacher'){
+
+    }
 }

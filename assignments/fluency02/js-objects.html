@@ -12,40 +12,33 @@
 </head>
 <body>
 <!-- JavaScript Objects - Object Creation Functions, Inheritance, Properties, Methods, Instantiation -->
-<div class="colTitle">Add A Book To Your Library</div>
+<div class="colTitle">Add A Student Profile - Class Limit of 10</div>
 <div class="bodyContainer">
   <div class="colContainer"></div>
   <div class="colContainer"> 
   <form>
-      Author First Name:<br>
+      First Name:<br>
       <input type="text" name="fName" placeholder="Mickey">
       <br>
-      Author Last Name:<br>
+      Last Name:<br>
       <input type="text" name="lName" placeholder="Mouse">
       <br>
-      Book Name:<br>
-      <input type="text" name="bName" placeholder="Disneyland...yay">
+      Grade:<br>
+      <input type="text" name="grade" placeholder="Junior">
       <br>
-      ISBN:<br>
-      <input type="text" name="isbn" placeholder="123-456">
+      Age:<br>
+      <input type="text" name="age" placeholder="16">
+      <br>
+      Gender:<br>
+      <input type="text" name="gender" placeholder="Male">
       <br>
       <br><br>
-      <input type="button" value="Submit" onclick="createBook(fName.value, lName.value, bName.value, isbn.value)">
+      <input type="button" value="Submit" onclick="createProfile(fName.value, lName.value, grade.value, age.value, gender.value)">
     </form> 
   </div> 
   <div class="colContainer">
-    Show Books Here: <br>
-    <button type="button" onclick="displayBooks()"> Show Books </button> <br>
-    <div class="bodyContainer">
-      <div id="authorCol">
-        <div class="colTitle">Book Author<br></div><br>
-      </div>
-      <div id="bookCol">
-        <div class="colTitle">Book Name<br></div><br>
-      </div>
-      <div id="isbnCol">
-        <div class="colTitle">Book ISBN<br></div><br>
-      </div>
+    Request a Profile <br>
+    <button type="button" onclick="requestProfile()"> Request Profile </button> <br>
     </div>
   </div> 
 </div>
