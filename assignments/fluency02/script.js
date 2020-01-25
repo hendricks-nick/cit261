@@ -41,6 +41,9 @@ function createProfile(first, last, grade, age, gender){
 
 // loops through array to call profiles
 function requestProfile(){
+    // reset div to empty
+    document.getElementById("classProfiles").innerHTML = "";
+
     for (var i = 0; i < listofStudents.length; i++){    
         document.getElementById("classProfiles").innerHTML += listofStudents[i].getProfile();
     }
