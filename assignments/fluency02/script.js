@@ -31,8 +31,7 @@ class Student extends Person{
 var listofStudents = [];
 
 function createProfile(first, last, grade, age, gender){
-    student = new Student(first, last, grade, age, gender);
-    listofStudents.push(student);
+    listofStudents.push(new Student(first, last, grade, age, gender););
     console.log("Array: " + listofStudents);
     console.log("Array Length: " + listofStudents.length);
 }
