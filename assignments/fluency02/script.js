@@ -18,7 +18,7 @@ class Student extends Person{
         this.grade = grade;
     }
 
-    get getProfile(){
+    getProfile(){
         return ("Student <br>" + 
                 "Name: " + this.name.first + " " + this.name.last + "<br>" +
                 "Grade: " + this.grade + "<br>" +
