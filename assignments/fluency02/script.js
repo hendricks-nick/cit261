@@ -12,10 +12,8 @@ class Person {
 }
 
 // inherits person
-class Student {
-    constructor(first, last, grade, age, gender) {
-
-        Person.call(this, first, last, age, gender);
+class Student extends Person{
+    constructor(grade) {
 
         this.grade = grade;
     }
@@ -33,7 +31,8 @@ class Student {
 var listofStudents = [];
 
 function createProfile(first, last, grade, age, gender){
-    listofStudents[0] = new Student(first, last, grade, age, gender);
+    student = new Student(first, last, grade, age, gender);
+    listofStudents.push(student);
     console.log("Array: " + listofStudents);
     console.log("Array Length: " + listofStudents.length);
 }
