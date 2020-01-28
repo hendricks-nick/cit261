@@ -22,6 +22,7 @@ function getWeather(zip, country){
 
 function weatherRequest(urlRequest) {
     var client = new HttpClient();
+    console.log(urlRequest);
     client.get(urlRequest, function(response) {
         console.log(response);
     });
