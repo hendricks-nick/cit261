@@ -7,7 +7,7 @@ var HttpClient = function() {
         }
 
         anHttpRequest.open( "GET", aUrl, true );            
-        anHttpRequest.send( null );
+        anHttpRequest.send();
     }
 }
 
