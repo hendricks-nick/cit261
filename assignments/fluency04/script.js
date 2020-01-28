@@ -23,7 +23,7 @@ function getWeather(zip, country){
 function weatherRequest(urlRequest) {
     var client = new HttpClient();
     console.log(urlRequest);
-    client.get(urlRequest, function(response) {
+    client.get('api.openweathermap.org/data/2.5/weather?zip=85210&APPID=081ff0cf85a3a31024f8fac0a6142051', function(response) {
         console.log(response);
     });
 }
