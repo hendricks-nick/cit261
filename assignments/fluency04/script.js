@@ -11,15 +11,6 @@ var HttpClient = function() {
     }
 }
 
-$('.weatherForm').on('submit', function () {
-    var client = new HttpClient();
-    //console.log(urlRequest);
-    client.get('api.openweathermap.org/data/2.5/weather?zip=85210&APPID=081ff0cf85a3a31024f8fac0a6142051', function(response) {
-        console.log(response);
-        document.getElementById('bodyText').innerHTML = response;
-    });
-});
-
 function getWeather(zip, country){
     const apiKey = "081ff0cf85a3a31024f8fac0a6142051";
 
@@ -29,12 +20,26 @@ function getWeather(zip, country){
     weatherRequest(urlRequest);
 }
 
+function weatherRequest(url) {
+    var xhttp;
+    xhttp=new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        console.log(this.status);
+      }
+   };
+    xhttp.open("GET", url, true);
+    xhttp.send();
+  }
+
+/*
 function weatherRequest(urlRequest) {
     var client = new HttpClient();
     console.log(urlRequest);
-    client.get('api.openweathermap.org/data/2.5/weather?zip=85210&APPID=081ff0cf85a3a31024f8fac0a6142051', function(response) {
+    client.get(urlRequest, function(response) {
         console.log(response);
     });
 }
+*/
 
   // form > getWeather > make request > update HTML
