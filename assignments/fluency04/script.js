@@ -13,7 +13,7 @@ var HttpClient = function() {
 
 $('.weatherForm').on('submit', function () {
     var client = new HttpClient();
-    console.log(urlRequest);
+    //console.log(urlRequest);
     client.get('api.openweathermap.org/data/2.5/weather?zip=85210&APPID=081ff0cf85a3a31024f8fac0a6142051', function(response) {
         console.log(response);
         document.getElementById('bodyText').innerHTML = response;
