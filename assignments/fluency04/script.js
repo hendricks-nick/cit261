@@ -1,7 +1,7 @@
 function getWeather(zip, country){
     const apiKey = "081ff0cf85a3a31024f8fac0a6142051";
 
-    var urlRequest = "api.openweathermap.org/data/2.5/weather?zip=" + zip + "," + country + "&APPID=" + apiKey;
+    var urlRequest = "api.openweathermap.org/data/2.5/weather?zip=" + zip + "&APPID=" + apiKey;
 
     weatherRequest(urlRequest);
 }
