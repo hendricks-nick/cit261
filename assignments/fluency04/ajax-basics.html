@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="author" content="Nick Hendricks">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="author" content="Nick Hendricks">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-  <link href="../css/style.css" rel="stylesheet">
-</head>
-<body>
-  <!--AJAX requesting a JSON file-->
-  <form class="weatherForm">
-    City:<br>
-    <input type="text" name="city" placeholder="Ex. Dallas">
-    <br>
-    Country:<br>
-    <select name="country">
-      <option value="us" selected>United States</option>
-    </select>
-    <br><br>
-    <input type="button" value="Submit" onclick="getWeather(city.value, country.value)">
-  </form> 
-  <div id="bodyText"></div>
-  <script src="script.js"></script>
-</body>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link href="../css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--AJAX requesting a JSON file-->
+    <div class="bodyContainer">
+      <!--Left Div-->
+      <div></div>
+      <!--Center Div-->
+      <div>
+        <form class="weatherForm">
+          City:<br>
+          <input type="text" name="city" placeholder="Ex. Dallas">
+          <br>
+          Country:<br>
+          <select name="country">
+            <option value="us" selected>United States</option>
+          </select>
+          <br><br>
+          <input type="button" value="Submit" onclick="getWeather(city.value, country.value)">
+        </form> 
+      </div>
+      <!--Right Div-->
+      <div id="bodyText"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
