@@ -28,7 +28,7 @@ function weatherRequest(urlRequest) {
 function getWeather(city, country){
     
     const apiKey = "081ff0cf85a3a31024f8fac0a6142051";
-    var urlRequest = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID" + apiKey;
+    var urlRequest = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=" + apiKey;
     weatherRequest(urlRequest);
 }
 
