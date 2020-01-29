@@ -23,24 +23,25 @@ function weatherRequest(urlRequest) {
     });
 }*/
 
-// Getweather function - creates URL for API request and calls function to make AJAX GET request
+// GETWEATHER 
+// function - creates URL for API request and calls function to make AJAX GET request
 function getWeather(city, country){
     
-    //const apiKey = "081ff0cf85a3a31024f8fac0a6142051";
-    var urlRequest = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=081ff0cf85a3a31024f8fac0a6142051";
+    const apiKey = "081ff0cf85a3a31024f8fac0a6142051";
+    var urlRequest = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID" + apiKey;
     weatherRequest(urlRequest);
 }
 
+// WEATHERREQUEST
+// function - uses AJAX to request current weather from input city - console logs data.
 function weatherRequest(urlRequest) {
 
-    var xhttp = new XMLHttpRequest();
-    
+    var xhttp = new XMLHttpRequest();   
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-       console.log(this.responseText);
-
+       
+        console.log(this.responseText);
        var obj = JSON.parse(this.responseText);
-
        console.log(obj);
       }
     };
