@@ -11,28 +11,15 @@ var HttpClient = function() {
     }
 }
 
-function getWeather(zip, country){
+function getWeather(city, country){
     const apiKey = "081ff0cf85a3a31024f8fac0a6142051";
 
-    var urlRequest = "https://reqres.in/api/users?page=2";
+    var urlRequest = "http://api.openweathermap.org/data/2.5/forecast?id=" + city + "&APPID=081ff0cf85a3a31024f8fac0a6142051";
 
     console.log(urlRequest);
     weatherRequest(urlRequest);
 }
 
-function weatherRequest(url) {
-    var xhttp;
-    xhttp=new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        console.log(this.responseText);
-      }
-   };
-    xhttp.open("GET", url, true);
-    xhttp.send();
-  }
-
-/*
 function weatherRequest(urlRequest) {
     var client = new HttpClient();
     console.log(urlRequest);
@@ -40,6 +27,6 @@ function weatherRequest(urlRequest) {
         console.log(response);
     });
 }
-*/
+
 
   // form > getWeather > make request > update HTML
