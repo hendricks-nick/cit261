@@ -7,8 +7,6 @@ function getJSON() {
           document.getElementById("leftCol").innerHTML = this.responseText;
           var obj = JSON.parse(this.responseText);
           document.getElementById("centerCol").innerHTML = obj;
-
-          
       }
     };
     xhttp.open("GET", "json.txt", true);
