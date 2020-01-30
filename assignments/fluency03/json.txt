@@ -1,5 +1,5 @@
 {
-  "colors": [
+  "colors":
     {
       "color": "black",
       "category": "hue",
@@ -53,5 +53,4 @@
         "hex": "#0F0"
       }
     },
-  ]
 }
