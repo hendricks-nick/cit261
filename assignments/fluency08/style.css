@@ -1,0 +1,13 @@
+.gridContainer{
+    width: 990px;
+    height: 990px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.gridCell {
+    background: red;
+    transition: width 1s, height 1s linear 1s;
+}
+

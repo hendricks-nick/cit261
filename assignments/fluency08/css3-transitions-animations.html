@@ -8,10 +8,41 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="../css/style.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="startGame()">
+  <h2>Click on colored square to empty it and fill or empty the squares next to it. Try to get them all empty.</h2>
+  <div class="gridContainer">
+    <div class="container">
+      <div id="cell1" onclick="checkSquare(1)"></div>
+    </div>
+    <div class="container">
+      <div id="cell2" onclick="checkSquare(2)"></div>
+    </div>
+    <div class="container">
+      <div id="cell3" onclick="checkSquare(3)"></div>
+    </div>
+    <div class="container">
+      <div id="cell4" onclick="checkSquare(4)"></div>
+    </div>
+    <div class="container">
+      <div id="cell5" onclick="checkSquare(5)" ></div>
+    </div>
+    <div class="container">
+      <div id="cell6" onclick="checkSquare(6)"></div>
+    </div>
+    <div class="container">
+      <div id="cell7" onclick="checkSquare(7)"></div>
+    </div>
+    <div class="container">
+      <div id="cell8" onclick="checkSquare(8)"></div>
+    </div>
+    <div class="container">
+      <div id="cell9" onclick="checkSquare(9)"></div>
+    </div>
+  </div>
+
   <!--Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript-->
   <script src="script.js"></script>
 </body>
