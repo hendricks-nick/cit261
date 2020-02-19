@@ -11,6 +11,21 @@ let myMap = new Map([
     [9, '0'],
 ]);
 
+// Generates 3 random squares
+function startGame() {
+    for (var i = 0; i < 3; i++) {
+        var divNum = Math.floor(Math.random() * 9) + 1;
+        loadSquare(divNum);
+        console.log(divNum);
+    }
+}
+
+function checkSquare(divNum) {
+    if (myMap.get(divNum) === '1'){
+        shrinkSquare(divNum);
+    }
+}
+
 function loadSquare(divNum){
     myMap.set(divNum, '1');
     document.getElementById("cell" + divNum).style.width = '100px';
@@ -24,17 +39,10 @@ function shrinkSquare(divNum) {
 
 }
 
-function checkSquare(divNum) {
-    if (myMap.get(divNum) === '1'){
-        shrinkSquare(divNum);
-    }
-}
-
-// Generates 3 random squares
-function startGame() {
-    for (var i = 0; i < 3; i++) {
-        var divNum = Math.floor(Math.random() * 9) + 1;
-        loadSquare(divNum);
-        console.log(divNum);
+function checkConditions(){
+    for (var i = 0; i < myMap.size; i++) {
+        if (myMap.has(1)){
+            break;
+        }
     }
 }
