@@ -35,5 +35,6 @@ function startGame() {
     for (var i = 0; i < 3; i++) {
         var divNum = Math.floor(Math.random() * 9) + 1;
         loadSquare(divNum);
+        console.log(divNum);
     }
 }
