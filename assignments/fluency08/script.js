@@ -1,5 +1,4 @@
-var boxOne = document.getElementsByClassName('box')[0],
-    $boxTwo = $('.box:eq(1)');
+var boxOne = document.getElementsByClassName('box')[0];
 
 document.getElementsByClassName('toggleButton')[0].onclick = function() {
   if(this.innerHTML === 'Play') 
