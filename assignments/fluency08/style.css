@@ -1,17 +1,14 @@
-body{
-    align-content: center;
-    justify-content: center;
-}
-.gridContainer{
-    width: 990px;
-    height: 990px;
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
-}
-
-.gridCell {
-    background: red;
-    transition: width 1s, height 1s linear 1s;
-}
-
+.box {
+    margin: 30px;
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+  }
+  .box.horizTranslate {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    margin-left: 50% !important;
+  }
