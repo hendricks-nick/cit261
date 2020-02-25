@@ -6,5 +6,5 @@ function manipulateStyle(back, front) {
 
 function changeFont(font) {
     var docClass = document.getElementsByClassName('bodyStyle');
-    docClass[0].style.font = font;
+    docClass[0].style.fontFamily = font;
 } 
