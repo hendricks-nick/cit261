@@ -5,4 +5,4 @@ function manipulateStyle(back, front) {
 
 function changeFont(font) {
     document.getElementsByClassName('bodyStyle').font = font;
-}
+} 
