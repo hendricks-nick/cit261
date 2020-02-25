@@ -1,8 +1,10 @@
 function manipulateStyle(back, front) {
-    document.getElementByClassName('bodyStyle').style.backgroundColor = back;
-    document.getElementByClassName('bodyStyle').style.color = front;
+    let docClass = document.getElementsByClassName('bodyStyle');
+    docClass.style.backgroundColor = back;
+    docClass.style.color = front;
 }
 
 function changeFont(font) {
-    document.getElementsByClassName('bodyStyle').font = font;
+    let docClass = document.getElementsByClassName('bodyStyle');
+    docClass.style.font = font;
 } 
