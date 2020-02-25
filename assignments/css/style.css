@@ -8,7 +8,7 @@
     padding-top: 250 px;
 }
 
-button {
+.button1 {
 
     display:inline-block;
     padding:0.35em 1.2em;
@@ -24,10 +24,16 @@ button {
     transition: all 0.2s;
 }
 
-button:hover{
+.button1:hover{
     color:#000000;
     background-color:#FFFFFF;
         
+}
+
+.buttonStyle {
+    padding: 25px;
+    justify-content: center;
+    align-self: center;
 }
 .colContainer{
     justify-items: center;
