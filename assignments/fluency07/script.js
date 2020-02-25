@@ -1,5 +1,5 @@
 function manipulateStyle(back, front) {
-    var docClass = document.getElementsByClassName('bodyStyle');
+    var docClass = document.querySelector('.bodyStyle');
     docClass.style.backgroundColor = back;
     docClass.style.color = front;
 }
