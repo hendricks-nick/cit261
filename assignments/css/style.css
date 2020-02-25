@@ -18,10 +18,12 @@
     box-sizing: border-box;
     text-decoration:none;
     font-family:'Roboto',sans-serif;
+    font-size: 16px;
     font-weight:300;
     color: black;
     text-align:center;
     transition: all 0.2s;
+    width: 40px;
 }
 
 .button1:hover{
