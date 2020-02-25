@@ -19,14 +19,14 @@
     text-decoration:none;
     font-family:'Roboto',sans-serif;
     font-weight:300;
-    color:#FFFFFF;
+    color: black;
     text-align:center;
     transition: all 0.2s;
 }
 
 .button1:hover{
-    color:#000000;
-    background-color:#FFFFFF;
+    color: white;
+    background-color: black;
         
 }
 
