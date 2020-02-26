@@ -15,13 +15,10 @@ var boxOne = document.getElementsByClassName('box')[0];
 
     /* Saves the location of the margin left and saves it to the CSS inline 
        To prevent it from resetting */
-    //var computedStyle = window.getComputedStyle(boxOne),
-        // marginLeft = computedStyle.getPropertyValue('margin-left');
-    // boxOne.style.marginLeft = marginLeft;
+    var computedStyle = window.getComputedStyle(boxOne),
+         marginLeft = computedStyle.getPropertyValue('margin-left');
+    
+    boxOne.style.marginLeft = marginLeft;
     boxOne.classList.remove('horizTranslate');    
   }  
-}
-
-function pauseAnimation() {
-
 }
