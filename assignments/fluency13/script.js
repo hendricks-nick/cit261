@@ -1,12 +1,14 @@
 function changeState (className) {
-    var docClass = document.getElementsByClassName(className);
 
-    if (docClass[0].style.animationPlayState === 'paused'){
-        docClass[0].style.animationPlayState = 'play';
-        document.getElementById(className).innerHTML = "Pause";
+    if (document.getElementById(className).style.animationPlayState === 'paused'){
+        console.log("Switching " + className + " from paused to play.");
+        document.getElementById(className).style.animationPlayState = 'play';
+        document.getElementById(className + "btn").innerHTML = "Pause";
+
     }
     else {
-        docClass[0].style.animationPlayState = 'paused';
-        document.getElementById(className).innerHTML = "Play";
+        console.log("Switching " + className + " from play to paused.");
+        document.getElementById(className).style.animationPlayState = 'paused';
+        document.getElementById(className + "btn").innerHTML = "Play";
     }
 }
