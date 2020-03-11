@@ -9,10 +9,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="../css/style.css" rel="stylesheet">
+  <style>
+    .box1 {
+      width: 150px;
+      height: 80px;
+      background-color: black;
+      transform: rotate(60deg);
+    }
+
+    .box2 {
+      width: 150px;
+      height: 80px;
+      background-color: red;
+      transform: skewY(90deg);
+    }
+
+    .box3 {
+      width: 150px;
+      height: 80px;
+      background-color: blue;
+      transform: scaleY(2.5);
+    }
+  </style>
 </head>
 
 <body>
     <!--Designing, Defining, and Triggering CSS3 TransFORMS without Custom Libraries-->
+    <div class="bodyContainer">
+      <div>Rotate</div>
+      <div>Skew</div>
+      <div>Scale X</div>
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+    </div>
   <script src="script.js"></script>
 </body>
 
