@@ -6,7 +6,7 @@ dupRow will give each row a button the option to insertBefore with a different c
 // Create buttons
 function createButton() {
     var btn = document.createElement("BUTTON");   // Create a <button> element
-    btn.innerHTML = "Insert Before";                   // Insert text
+    btn.innerHTML = "Insert Before <br>";                   // Insert text
     document.getElementById("btnColumn").appendChild(btn); 
 }
 
