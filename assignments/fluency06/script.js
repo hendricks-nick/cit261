@@ -2,11 +2,12 @@
 Create buttons will create and append the element to their respective column.
 dupRow will give each row a button the option to insertBefore with a different count
 */
+btnNum = 1;
 
 // Create buttons
 function createButton() {
     var btn = document.createElement("BUTTON");   // Create a <button> element
-    btn.innerHTML = "Insert Before <br>";                   // Insert text
+    btn.innerHTML = "Button #" + btnNum + "Insert Before </br>";                   // Insert text
     document.getElementById("btnColumn").appendChild(btn); 
 }
 
