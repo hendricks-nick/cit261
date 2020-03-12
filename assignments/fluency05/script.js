@@ -18,7 +18,7 @@ function getRecord(id) {
     document.getElementById("pullNumEmp").innerHTML = "";
     document.getElementById("pullType").innerHTML = "";
 
-    if (id === 0) {
+    if (id === '0') {
         // pull all data from local storage
         for (var i = 1; i <= companyCount; i++) {
             displayStorage(i);
