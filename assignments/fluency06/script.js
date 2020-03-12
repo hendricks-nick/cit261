@@ -7,7 +7,7 @@ btnNum = 1;
 // Create buttons
 function createButton() {
     var btn = document.createElement('BUTTON');   // Create a <button> element
-    btn.innerHTML = 'Button #' + btnNum + 'Insert Before <br>';                   // Insert text
+    btn.innerHTML = 'Button #' + btnNum + '<br> Insert Before';                   // Insert text
     btn.setAttribute('id',('btn' + btnNum))
     btn.setAttribute('value', btnNum);
     btn.setAttribute('onclick', 'dupeBtn(this)');
@@ -41,7 +41,7 @@ function dupeBtn(btnObj) {
     console.log(btnObj.id);
 
     var btn = document.createElement('BUTTON');   // Create a <button> element
-    btn.innerHTML = 'Button # ' + btnNum + 'Click to Remove';                   // Insert text
+    btn.innerHTML = 'Button # ' + btnNum + ' Click to Remove';                   // Insert text
     btn.setAttribute('id',('btn' + btnNum))
     btn.setAttribute('value', btnNum);
     btn.setAttribute('onclick', 'removeBtn(this)');
