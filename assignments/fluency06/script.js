@@ -6,9 +6,14 @@ btnNum = 1;
 
 // Create buttons
 function createButton() {
-    var btn = document.createElement("BUTTON");   // Create a <button> element
-    btn.innerHTML = "Button #" + btnNum + "Insert Before </br>";                   // Insert text
-    document.getElementById("btnColumn").appendChild(btn); 
+    var btn = document.createElement('BUTTON');   // Create a <button> element
+    btn.innerHTML = 'Button #' + btnNum + 'Insert Before <br>';                   // Insert text
+    btn.setAttribute('id',('btn' + btnNum))
+    btn.setAttribute('value', btnNum);
+    btn.setAttribute('onclick', 'dupeBtn(this)');
+    document.getElementById('btnColumn').appendChild(btn); 
+    
+    btnNum++;
 }
 
 // Global to keep track of num of paragraphs for dynamic text
@@ -25,15 +30,12 @@ function createParagraph() {
 
 // Create text box
 function createText() {
-
+    var text = document.createElement("input");
+    text.type = 'text';
+    document.getElementById('textColumn').appendChild(text);
 }
 
-// Delete Row
-function deleteRow(id) {
-
-}
-
-// Duplicate Row (insertBefore)
-function dupeRow(row) {
-
+// Duplicate Button (insertBefore)
+function dupeBtn(btnObj) {
+    console.log(btnObj);
 }
