@@ -41,13 +41,21 @@ function dupeBtn(btnObj) {
     console.log(btnObj.id);
 
     var btn = document.createElement('BUTTON');   // Create a <button> element
-    btn.innerHTML = 'Button # ' + btnNum + 'Insert Before';                   // Insert text
+    btn.innerHTML = 'Button # ' + btnNum + 'Click to Remove';                   // Insert text
     btn.setAttribute('id',('btn' + btnNum))
     btn.setAttribute('value', btnNum);
-    btn.setAttribute('onclick', 'dupeBtn(this)');
+    btn.setAttribute('onclick', 'removeBtn(this)');
 
     let parentDiv = document.getElementById(btnObj.id).parentNode;
     let currentDiv = document.getElementById(btnObj.id);
 
     parentDiv.insertBefore(btn, currentDiv);
+    
+    btnNum++;
+}
+
+//remove child
+function removeBtn(btnObj) {
+    let child = document.getElementById(btnObj.id);
+    child.parentNode.removeChild(child);
 }
