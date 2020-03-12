@@ -19,9 +19,9 @@
 </head>
 <body>
   <div class="bodyContainer">
-    <div>Set Data To LocalStorage</div>
-    <div>Display Data From LocalStorage</div>
-    <div>Get Data From LocalStorage</div>
+    <div><h2>Set Data To LocalStorage</h2><br><br></div>
+    <div><h2>Display Data From LocalStorage</h2><br><br></div>
+    <div><h2>Get Data From LocalStorage</h2><br><br></div>
     <div id="setCol">
       <form>
         <label for="bizName">Company Name:</label><br>
@@ -34,7 +34,7 @@
       </form>
     </div>
     <div class="displayCol">
-      <div>Business Name</div>'
+      <div>Business Name</div>
       <div>Number of Employees</div>
       <div>Business Type</div>
       <div id="pullName"></div>
@@ -44,7 +44,7 @@
     <div id="getCol">
       <div><!--leave empty--></div>
       <div>
-        Put in a number to pull that data. 0 pulls ALL records.
+        <h3>Put in a number to pull that data. 0 pulls ALL records.</h3>
         <input type="text" id="getData" placeholder="0, 1, 2, etc.">
         <input type="button" value="Get" onclick="getRecord(getData.value)">
       </div>
