@@ -38,4 +38,5 @@ function createText() {
 // Duplicate Button (insertBefore)
 function dupeBtn(btnObj) {
     console.log(btnObj);
+    console.log(btnObj.id);
 }
