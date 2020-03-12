@@ -17,20 +17,20 @@
   <link href="../css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="changeBack()">
   <div class="bodyContainer">
     <div>onClick event</div>
-    <div>onLoad event</div>
+    <div>onLoad event (Body</div>
     <div>onMouseOver event</div>
     <div id="clickEvent" onclick="changeDiv(this)"></div>
-    <div id="loadEvent" onload="changeDiv(this)"></div>
+    <div></div>
     <div id="mouseEvent" onmouseover="changeDiv(this)"></div>
     <div>onKeyDown event</div>
     <div>onChange event</div>
     <div>onTouchBegin event (mobile)</div>
     <div> <input type="text" id="keyEvent" onkeydown="changeDiv(this)"></div>
     <div> 
-      <select id="changeEvent" onchange="changeDiv(this)">
+      <select id="changeEvent" onchange="changeDrop(this)">
         <option value="red">Red</option>
         <option value="blue">Blue</option>
         <option value="green">Green</option>
