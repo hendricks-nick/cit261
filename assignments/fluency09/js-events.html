@@ -12,6 +12,26 @@
 </head>
 
 <body>
+  <div class="bodyContainer">
+    <div>onClick event</div>
+    <div>onLoad event</div>
+    <div>onMouseOver event</div>
+    <div id="clickEvent" onclick="changeDiv(this)"></div>
+    <div id="loadEvent" onload="changeDiv(this)"></div>
+    <div id="mouseEvent" onmouseover="changeDiv(this)"></div>
+    <div>onKeyDown event</div>
+    <div>onChange event</div>
+    <div>onTouchBegin event (mobile)</div>
+    <div> <input type="text" id="keyEvent" onkeydown="changeDiv(this)"></div>
+    <div> 
+      <select id="changeEvent" onchange="changeDiv(this)">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+    </div>
+    <div id="touchEvent" ontouchstart="changeDiv(this)"></div>
+  </div>
   <!--Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events-->
   <script src="script.js"></script>
 </body>
