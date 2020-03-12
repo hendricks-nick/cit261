@@ -36,4 +36,7 @@ function getRecord(id) {
 function displayStorage(id) {
     let tempObj = JSON.parse(localStorage.getItem(id));
     console.log(tempObj);
+    document.getElementById("pullName").innerHTML += (tempObj.name + "<br>");
+    document.getElementById("pullNumEmp").innerHTML += (tempObj.numEmployees + "<br>");
+    document.getElementById("pullType").innerHTML += (tempObj.type + "<br>");
 }
