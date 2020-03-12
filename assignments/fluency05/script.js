@@ -5,13 +5,17 @@ class Company{
         this.type = type;
     }
 }
+// Globabl count to keep track of records
 var companyCount = 1;
+
+// Creates Object and addsto local storage
 function setRecord (name, numEmployees, type) {
-    var companyObject = new Company(name, numEmployees, type);
+    let companyObject = new Company(name, numEmployees, type);
     localStorage.setItem(companyCount, JSON.stringify(companyObject));
     companyCount++;
-
 }
+
+// Checks for record pull, invalid ID shows error
 function getRecord(id) {
     // clear displayColumn
     document.getElementById("pullName").innerHTML = "";
@@ -33,6 +37,7 @@ function getRecord(id) {
     }
 }
 
+// displays record
 function displayStorage(id) {
     let tempObj = JSON.parse(localStorage.getItem(id));
     console.log(tempObj);
