@@ -25,7 +25,7 @@ function getRecord(id) {
         }
     }
     // no record with that id
-    else if (id > companyCount){
+    else if (id > companyCount - 1){
         document.getElementById("pullName").innerHTML = "Invalid ID Number";
     }
     else {
