@@ -39,4 +39,15 @@ function createText() {
 function dupeBtn(btnObj) {
     console.log(btnObj);
     console.log(btnObj.id);
+
+    var btn = document.createElement('BUTTON');   // Create a <button> element
+    btn.innerHTML = 'Button # ' + btnNum + 'Insert Before';                   // Insert text
+    btn.setAttribute('id',('btn' + btnNum))
+    btn.setAttribute('value', btnNum);
+    btn.setAttribute('onclick', 'dupeBtn(this)');
+
+    let parentDiv = document.getElementById(btnObj.id).parentNode;
+    let currentDiv = document.getElementById(btnObj.id);
+
+    parentDiv.insertBefore(btn, currentDiv);
 }
