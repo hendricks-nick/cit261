@@ -1,3 +1,3 @@
 function changeDiv(divObj) {
-    divObj.style.backgroundColor = 'red';
+    document.getElementById(divObj.id).style.backgroundColor = 'red';
 }
