@@ -20,19 +20,16 @@ body {
     height: 250px;
 }
 
-.homeLogo {
-    justify-items: start;
-}
-
 .homeLogo img {
     width: 100px;
     height: 100px;
+    justify-self: start;
 }
 
-.bannerLogo {
-    justify-items: center;
+.bannerLogo img{
+    justify-self: center;
 }
 
-.topMenu {
-    justify-items: end;
+.topMenu div{
+    justify-self: end;
 }
