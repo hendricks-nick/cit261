@@ -21,7 +21,7 @@ body {
 }
 
 .homeLogo {
-    justify-content: left;
+    justify-items: start;
 }
 
 .homeLogo img {
@@ -30,9 +30,9 @@ body {
 }
 
 .bannerLogo {
-    justify-content: center;
+    justify-items: center;
 }
 
 .topMenu {
-    justify-content: right;
+    justify-items: end;
 }
