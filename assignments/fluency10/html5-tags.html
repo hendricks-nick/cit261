@@ -12,6 +12,33 @@
 </head>
 
 <body>
+  <div class="bodyContainer">
+    <div>
+      <h3>Canvas</h3>
+    </div>
+    <div>
+      <h3>Audio</h3>
+    </div>
+    <div>
+      <h3>Video</h3>
+    </div>
+    <div>
+      <h4>Input text to have the <i>CANVAS</i> draw it.</h4><br>
+      <input type="text" id="userInput"><input type="button" value="Draw It" onclick="writeCanvas(userInput.value)"><br>
+      <canvas id="myCanvas"></canvas>
+    </div>
+    <div>
+      <audio id="myAudio" controls>
+        <source src="7_deadly_heresies.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div>
+      <video id="myVideo" width="1280" height="720">
+        <source src="ocean_vid.mp4" type="video/mp4">
+      </video>
+  </div>
+  </div>
+
   <!--HTML5 Tags - Video, Audio, and Canvas-->
   <script src="script.js"></script>
 </body>

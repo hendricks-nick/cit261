@@ -7,10 +7,49 @@
   <meta name="author" content="Nick Hendricks">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <style>
+    .displayCol {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      justify-items: center;
+    }
+  </style>
   <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
+  <div class="bodyContainer">
+    <div><h2>Set Data To LocalStorage</h2><br><br></div>
+    <div><h2>Display Data From LocalStorage</h2><br><br></div>
+    <div><h2>Get Data From LocalStorage</h2><br><br></div>
+    <div id="setCol">
+      <form>
+        <label for="bizName">Company Name:</label><br>
+        <input type="text" id="bizName" placeholder="Smith Consulting, Tax Prep, etc."><br>
+        <label for="numEmployees">Number of Employees:</label><br>
+        <input type="text" id="numEmployees" placeholder="10, 100, etc."><br>
+        <label for="bizType">Business Type:</label><br>
+        <input type="text" id="bizType" placeholder="B2B, B2C, etc."><br><br>
+        <input type="button" value="Add" onclick="setRecord(bizName.value, numEmployees.value, bizType.value)">
+      </form>
+    </div>
+    <div class="displayCol">
+      <div>Business Name</div>
+      <div>Number of Employees</div>
+      <div>Business Type</div>
+      <div id="pullName"></div>
+      <div id="pullNumEmp"></div>
+      <div id="pullType"></div>
+    </div>
+    <div id="getCol">
+      <div><!--leave empty--></div>
+      <div>
+        <h3>Put in a number to pull that data. 0 pulls ALL records.</h3>
+        <input type="text" id="getData" placeholder="0, 1, 2, etc.">
+        <input type="button" value="Get" onclick="getRecord(getData.value)">
+      </div>
+    </div>
+  </div>
   <!--Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects-->
   <script src="script.js"></script>
 </body>

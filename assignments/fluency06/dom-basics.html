@@ -9,18 +9,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="../css/style.css" rel="stylesheet">
+  <style>
+    .headerContainer{
+      display: grid;
+      margin-left: 200px;
+      margin-right: 200px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      justify-items: center;
+    }
+  </style>
 </head>
 
 <body>
   <!--DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc.-->
   <!--Header with buttons to offer different options for -->
   <div class="headerContainer">
-    <div class="buttonContainer"><button class="pBtn"></button></div>
-    <div class="buttonContainer"></div>
-    <div class="buttonContainer"></div>
+    <div class="buttonContainer"><button class="createBtn" onclick="createButton()">Create Button</button></div>
+    <div class="buttonContainer"><button class="createPar" onclick="createParagraph()">Create Paragraph</button></div>
+    <div class="buttonContainer"><button class="createText" onclick="createText()">Create Text Box</button></div>
   </div>
   <div class="bodyContainer">
-
+    <div id="btnColumn"></div>
+    <div id="parColumn"></div>
+    <div id="textColumn"></div>
   </div>
   <script src="script.js"></script>
 </body>
