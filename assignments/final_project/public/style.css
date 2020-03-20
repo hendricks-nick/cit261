@@ -1,7 +1,7 @@
 body {
     background-color: #252526;
 }
-
+ 
 .topBanner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
