@@ -1,0 +1,38 @@
+body {
+    background-color: #252526;
+}
+
+.topBanner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding-top: 25px;
+}
+
+.menuBtn {
+    width: 100px;
+    height: 100px;
+    background-color: ivory;
+    transition: height 2s;
+}
+
+.menuBtn:hover {
+    height: 250px;
+}
+
+.homeLogo {
+    justify-content: left;
+}
+
+.homeLogo img {
+    width: 100px;
+    height: 100px;
+}
+
+.bannerLogo {
+    justify-content: center;
+}
+
+.topMenu {
+    justify-content: right;
+}
