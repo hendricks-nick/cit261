@@ -19,17 +19,21 @@ body {
 .menuBtn:hover {
     height: 250px;
 }
-
-.homeLogo img {
-    width: 100px;
+.homeLogo img{
     height: 100px;
-    justify-self: start;
+    width: 100px;
+}
+.homeLogo img {
+    display: flex;
+    justify-content: start;
 }
 
-.bannerLogo img{
-    justify-self: center;
+.bannerLogo{
+    display: flex;
+    justify-content: center;
 }
 
-.topMenu div{
-    justify-self: end;
+.topMenu{
+    display: flex;
+    justify-content: end;
 }
