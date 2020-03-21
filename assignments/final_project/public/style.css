@@ -14,12 +14,19 @@ body {
 }
 .homeLogo img {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .bannerLogo{
     display: flex;
     justify-content: center;
+}
+.topMenu {
+    display: flex;
+    justify-content: flex-end;
+}
+.menuContainer{
+    cursor: pointer;
 }
 
 .menu1, .menu2, .menu3 {
