@@ -8,6 +8,7 @@ body {
     grid-template-rows: auto;
     padding-top: 25px;
     background-color: #2f2f30;
+    margin: 0;
 }
 .homeLogo img{
     height: 100px;
