@@ -24,10 +24,10 @@ body {
 .topMenu {
     display: flex;
     justify-content: flex-end;
-    align-content: center;
 }
 .menuContainer{
     cursor: pointer;
+    align-content: center;
 }
 
 .menu1, .menu2, .menu3 {
