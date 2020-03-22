@@ -25,10 +25,13 @@ body {
     display: flex;
     justify-content: flex-end;
 }
-.menuContainer{
+.menuContainerBox{
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+.menuContainer{
     cursor: pointer;
-    align-content: center;
 }
 
 .menu1, .menu2, .menu3 {
