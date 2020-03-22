@@ -28,6 +28,7 @@ body {
 .menuContainer{
     display: flex;
     cursor: pointer;
+    flex-wrap: wrap;
     align-content: center;
 }
 
