@@ -26,9 +26,8 @@ body {
     justify-content: flex-end;
 }
 .menuContainer{
-    display: flex;
+    display: grid;
     cursor: pointer;
-    flex-wrap: wrap;
     align-content: center;
 }
 
