@@ -26,6 +26,7 @@ body {
     justify-content: flex-end;
 }
 .menuContainer{
+    display: flex;
     cursor: pointer;
     align-content: center;
 }
