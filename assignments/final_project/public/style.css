@@ -31,6 +31,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    padding-right: 20px;
 }
 
 .menuContainerBox div{
