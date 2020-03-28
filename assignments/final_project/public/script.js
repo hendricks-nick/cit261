@@ -35,7 +35,7 @@ function matchGame(){
     let cardPlace = [12];
     let imageUse = {1:0, 2:0, 3:0, 4:0, 5:0, 6:0};
     // Loops through each placement
-    for (var i = 0; i <= 12; i++){
+    for (var i = 0; i < 12; i++){
         // ensures that each card is only used twice
         do{
             var tempVal = Math.floor(Math.random() * 6) + 1;
