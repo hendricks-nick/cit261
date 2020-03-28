@@ -97,3 +97,15 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
 }
+
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.cardImage img{
+    width: 180px;
+    height: 180px;
+}
