@@ -58,3 +58,30 @@ body {
 .change .menu3 {
   transform: rotate(45deg) translate(-8px, -8px);
 }
+
+.gameContainer{
+    padding-top: 100px;
+    padding-left: 130px;
+    padding-right: 130px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr .8fr;
+}
+
+.gameTitle{
+    text-align: center;
+    font-size: 44px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.gameImage{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.gameImage img{
+    width: 200px;
+    height: 200px;
+}
