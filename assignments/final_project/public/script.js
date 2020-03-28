@@ -52,7 +52,7 @@ function matchGame(){
         '</div>';
     
     // iterate through cardPlace array to place cards
-    for(var i = 0; i < cardPlace.length; i++){
+    for(var i = 0; i < 12; i++){
         document.getElementById("matchGameContainer").innerHTML +=
             '<div class="cardContainer">' +
             '   <div class="cardImage">' +
