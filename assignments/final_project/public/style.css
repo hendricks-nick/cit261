@@ -58,20 +58,24 @@ body {
 .change .menu3 {
   transform: rotate(45deg) translate(-8px, -8px);
 }
-
-.gameContainer{
+#gameSelection{
     padding-top: 100px;
     padding-left: 130px;
     padding-right: 130px;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.gameContainer{
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: .2fr .8fr;
 }
-
 .gameTitle{
     text-align: center;
     font-size: 44px;
     font-family: 'Fjalla One', sans-serif;
+    color: white;
 }
 
 .gameImage{
@@ -84,4 +88,12 @@ body {
 .gameImage img{
     width: 200px;
     height: 200px;
+    background-color: #2f2f30;
+    cursor: pointer;
+}
+
+#matchGameContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
 }
