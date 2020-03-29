@@ -96,6 +96,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
+    padding-top: 100px;
 }
 
 .cardContainer{
@@ -103,9 +104,20 @@ body {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+    padding-bottom: 25px;
 }
-
+.cardImage{
+    border: 10px solid rgb(100, 100, 100);
+}
 .cardImage img{
     width: 180px;
     height: 180px;
+}
+
+.cardCover{
+    display: inline-block;
+    background-color: lightseagreen;
+    width: 200px;
+    height: 200px;
+    transition: transform 300ms ease-in-out;
 }

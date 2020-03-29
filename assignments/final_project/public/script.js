@@ -55,8 +55,8 @@ function matchGame(){
     for(var i = 0; i < 12; i++){
         document.getElementById("matchGameContainer").innerHTML +=
             '<div class="cardContainer">' +
-            '   <div class="cardImage">' +
-            '       <img src="./public/img/card' + cardPlace[i] + '.png" alt="card' + i + '" onclick="showCard(' + i + ')"' +
+            '   <div class="cardImage" style="background-image: url(./public/img/card' + cardPlace[i] + '.png); background-repeat: no-repeat;width: 200px;height: 200px;">' +
+            '       <div class="cardCover"></div>' +
             '   </div>' +
             '</div>';
     }
