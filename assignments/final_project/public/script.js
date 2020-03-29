@@ -55,6 +55,7 @@ function matchGame(){
 
     // set game board
     document.getElementById("bodyContainer").innerHTML +=
+        '<div class="tContainer"><div class="gameTitle">Card Matching Game</div></div>' +
         '<div id="matchGameContainer">' +
         '</div>';
     

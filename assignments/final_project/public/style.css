@@ -1,6 +1,7 @@
 body {
     background-color: #252526;
     margin: 0 auto;
+    font-family: 'Fjalla One', sans-serif;
 }
  
 .topBanner {
@@ -96,7 +97,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .cardContainer{
@@ -137,4 +138,8 @@ body {
 
 .fa-check{
     color: limegreen !important;
+}
+
+.tContainer{
+    padding-top: 30px;
 }
