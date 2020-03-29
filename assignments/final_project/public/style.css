@@ -108,6 +108,7 @@ body {
 }
 .cardImage{
     border: 10px solid rgb(100, 100, 100);
+    cursor: pointer;
 }
 .cardImage img{
     width: 180px;
@@ -115,9 +116,25 @@ body {
 }
 
 .cardCover{
-    display: inline-block;
     background-color: lightseagreen;
     width: 200px;
     height: 200px;
-    transition: transform 300ms ease-in-out;
+    transition: .5s;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.flip .cardCover{
+    transform: scaleY(0);
+}
+
+.found .cardCover{
+    background-color:  rgb(100, 100, 100);
+}
+
+.fa-check{
+    color: limegreen !important;
 }
