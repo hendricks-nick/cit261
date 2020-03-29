@@ -72,6 +72,8 @@ function matchGame(){
 
 var cardNum = 1;
 var card1;
+var cardMatches = 0;
+var parentDiv;
 function flipCard(cardObj){
     console.log("Flipping: " + cardObj.getAttribute('value'));
     // Reveal card, stop it from being flipped back
@@ -102,6 +104,8 @@ function flipCard(cardObj){
                 cardObj.classList.toggle("found");
                 cardObj.childNodes[1].innerHTML += 
                     '<i class="fas fa-check fa-9x"></i>';
+                
+                cardMatches++;
             }
             // NO MATCH
             else{
@@ -116,6 +120,9 @@ function flipCard(cardObj){
         }, 2000);
     }
 
-
-
+    if(cardMatches === 6){
+        cardMatches = 0;
+        parentDiv = cardObj.parentNode.parentNode.parentNode;
+        parentDiv.setAttribute('class','endGame');
+    }
 }

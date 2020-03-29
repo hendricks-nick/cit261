@@ -143,3 +143,10 @@ body {
 .tContainer{
     padding-top: 30px;
 }
+
+.endGame #matchGameContainer{
+    transform: scaleY(0);
+    transform: scaleX(0);
+    transition-delay: 1s;
+    transition-duration: 1s;
+}
