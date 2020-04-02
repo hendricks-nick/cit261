@@ -22,9 +22,22 @@ function menuChange(divObj) {
 }
 
 function loadGames(game){
-    if(game === 'Match'){
-        matchGame();
-    }
+    loadingScreen(game);
+    setTimeout(function(){
+        if(game === 'Match'){
+            matchGame();
+        }
+    }, 3000);
+}
+
+function loadingScreen(game){
+    var body = document.getElementById("bodyContainer");
+    body.innerHTML = 
+        '<div class="loadingContainer">' +
+        '   <div class="loadHeader">Loading the ' + game + ' game!</div>' +
+        '   <div class="spinLoad">' +
+        '   </div>' +
+        '</div>';
 }
 
 // Match Game Functions

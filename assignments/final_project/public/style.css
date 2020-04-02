@@ -3,7 +3,14 @@ body {
     margin: 0 auto;
     font-family: 'Fjalla One', sans-serif;
 }
- 
+
+body .gameTransition{
+    background-color: mediumvioletred;
+    transition-timing-function: ease-in;
+    transition-delay: 0.5s;
+
+}
+
 .topBanner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -14,6 +21,7 @@ body {
 .homeLogo img{
     height: 100px;
     width: 100px;
+    cursor: pointer;
 }
 .homeLogo img {
     display: flex;
@@ -149,4 +157,40 @@ body {
     transform: scaleX(0);
     transition-delay: 1s;
     transition-duration: 1s;
+}
+
+@keyframes spinner {
+    0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+    100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+}
+.loadHeader{
+    color: white;
+    font-size: 46px;
+    padding-top: 120px;
+}
+.loadingContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.spinLoad {
+animation: 1.5s linear infinite spinner;
+animation-play-state: inherit;
+border: solid 5px #cfd0d1;
+border-bottom-color: #1c87c9;
+border-radius: 50%;
+content: "";
+height: 100px;
+width: 100px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate3d(-50%, -50%, 0);
+will-change: transform;
 }
